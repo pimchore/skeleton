@@ -69,6 +69,7 @@ jobs:
         cd sample-project/
 
         # Start containers
+        docker-compose pull
         docker-compose up -d
 
         # Install dockerize into the php-fpm container. We need it to block until
